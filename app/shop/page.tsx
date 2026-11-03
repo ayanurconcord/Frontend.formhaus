@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 
 type Category={id:number;name:string;slug:string;description:string;image:string};
-type Product={id:number;name:string;slug:string;description:string;category_id:number;category?:Category|null;price:number;compare_at_price?:number|null;sku:string;image:string;gallery:string[];tags:string[];stock:number};
+type Product={id:number;name:string;image_alt?:string;slug:string;description:string;category_id:number;category?:Category|null;price:number;compare_at_price?:number|null;sku:string;image:string;gallery:string[];tags:string[];stock:number};
 type CartLine={product_id:number;name:string;price:number;image:string;quantity:number};
 const API=process.env.NEXT_PUBLIC_API_URL||'https://backend-formhaus.vercel.app/api';
 const asset=(src:string)=>src?.startsWith('/uploads/')?API.slice(0,-4)+src:src;
