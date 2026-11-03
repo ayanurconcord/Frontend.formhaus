@@ -9,4 +9,9 @@ const nextConfig = {
   }
 };
 
-module.exports = nextConfig;
+module.exports = {
+  ...nextConfig,
+  async redirects() {
+    return [{ source: '/admin', destination: 'https://backend-formhaus.vercel.app/admin', permanent: false }];
+  }
+};
