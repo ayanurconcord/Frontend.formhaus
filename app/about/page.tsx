@@ -14,11 +14,11 @@ export default async function AboutPage() {
         <div className="brand-block"><span className="brand-mark">F</span> <span>{site?.settings.site_name || 'FORMHAUS.STUDIO'}</span></div>
         <nav className="main-nav">
           <Link href="/">Home</Link>
-          <Link href="/portfolio">Portfolio</Link>
-          <Link href="/services">Services</Link>
+          <Link href="/shop">Shop</Link>
           <Link href="/about">About</Link>
           <Link href="/#contact">Contact</Link>
         </nav>
+        <Link href="/shop#cart" className="primary-link">Cart</Link>
       </header>
       <section className="section-intro top-pad">
         <p className="eyebrow">About</p>
