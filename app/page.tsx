@@ -76,7 +76,7 @@ export default function HomePage() {
           <span>{settings.site_name}</span>
         </div>
         <nav className="main-nav">
-          {payload.navigation.map((item) => (
+          {[{id:'home',label:'Home',href:'/'},{id:'shop',label:'Shop',href:'/shop'},{id:'about',label:'About',href:'/about'},{id:'contact',label:'Contact',href:'#contact'}].map((item) => (
             <Link key={item.id} href={item.href}>{item.label}</Link>
           ))}
         </nav>
