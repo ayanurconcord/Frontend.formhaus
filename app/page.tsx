@@ -80,7 +80,8 @@ export default function HomePage() {
             <Link key={item.id} href={item.href}>{item.label}</Link>
           ))}
         </nav>
-        <Link href="/shop" className="primary-link">Shop <span aria-hidden="true">↗</span></Link>\n        <Link href="/shop#cart" className="primary-link" aria-label="Shopping cart">Cart</Link>
+        <Link href="/shop" className="primary-link">Shop <span aria-hidden="true">↗</span></Link>
+        <Link href="/shop#cart" className="primary-link" aria-label="Shopping cart">Cart</Link>
       </header>
 
       <section className="hero">
