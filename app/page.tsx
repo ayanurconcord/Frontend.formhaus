@@ -32,10 +32,9 @@ const fallbackData: WebsitePayload = {
   },
   navigation: [
     { id: 1, label: 'Home', href: '/', position: 1, is_visible: 1 },
-    { id: 2, label: 'Portfolio', href: '/portfolio', position: 2, is_visible: 1 },
-    { id: 3, label: 'Services', href: '/services', position: 3, is_visible: 1 },
-    { id: 4, label: 'About', href: '/about', position: 4, is_visible: 1 },
-    { id: 5, label: 'Contact', href: '#contact', position: 5, is_visible: 1 }
+    { id: 2, label: 'Shop', href: '/shop', position: 2, is_visible: 1 },
+    { id: 3, label: 'About', href: '/about', position: 3, is_visible: 1 },
+    { id: 4, label: 'Contact', href: '#contact', position: 4, is_visible: 1 }
   ],
   homepage: {
     sections: [],
@@ -81,7 +80,7 @@ export default function HomePage() {
             <Link key={item.id} href={item.href}>{item.label}</Link>
           ))}
         </nav>
-        <Link href="#contact" className="primary-link">Book a consult</Link>
+        <Link href="/shop" className="primary-link">Shop <span aria-hidden="true">↗</span></Link>\n        <Link href="/shop#cart" className="primary-link" aria-label="Shopping cart">Cart</Link>
       </header>
 
       <section className="hero">
