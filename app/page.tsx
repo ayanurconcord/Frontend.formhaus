@@ -76,12 +76,14 @@ export default function HomePage() {
           <span>{settings.site_name}</span>
         </div>
         <nav className="main-nav">
-          {[{id:'home',label:'Home',href:'/'},{id:'shop',label:'Shop',href:'/shop'},{id:'about',label:'About',href:'/about'},{id:'contact',label:'Contact',href:'#contact'}].map((item) => (
+          {[{id:'home',label:'Home',href:'/'},{id:'about',label:'About',href:'/about'},{id:'contact',label:'Contact',href:'#contact'}].map((item) => (
             <Link key={item.id} href={item.href}>{item.label}</Link>
           ))}
         </nav>
-        <Link href="/shop" className="primary-link">Shop <span aria-hidden="true">↗</span></Link>
-        <Link href="/shop#cart" className="primary-link" aria-label="Shopping cart">Cart</Link>
+        <div className="topbar-actions">
+          <Link href="/shop" className="primary-link">Shop <span aria-hidden="true">↗</span></Link>
+          <Link href="/shop#cart" className="primary-link" aria-label="Shopping cart">Cart</Link>
+        </div>
       </header>
 
       <section className="hero">
