@@ -25,8 +25,8 @@ const fallbackData: WebsitePayload = {
     seo_description: 'Premium 3D printing, product design and fabrication studio.',
     hero_title: 'Precision in every layer.',
     hero_description: 'We design, prototype, and fabricate extraordinary objects with industrial-grade 3D printing and custom production expertise.',
-    hero_primary_cta: 'Book a consult',
-    hero_primary_link: '#contact',
+    hero_primary_cta: 'Shop the collection',
+    hero_primary_link: '/shop',
     hero_secondary_cta: 'View projects',
     hero_secondary_link: '/portfolio'
   },
